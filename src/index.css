@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+#taskContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.task {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.task p {
+  margin: 5px 0;
+  flex-grow: 1;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.task.completed {
+  background-color: #d4edda;
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+  border-color: #28a745;
+}
+
+button#submitTask {
+  width: 80%;
+  margin-top: 10px;
+}
+
+button#addTask {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+#filters {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filter-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+#searchBar {
+  margin: 20px auto;
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#searchBar:focus {
+  border-color: #28a745;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+#searchBar,
+button {
+  margin-bottom: 15px;
+}
